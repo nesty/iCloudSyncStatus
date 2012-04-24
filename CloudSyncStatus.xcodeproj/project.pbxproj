@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C916A4915472D3B00953855 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C916A4815472D3B00953855 /* Cocoa.framework */; };
+		4C916A5315472D3B00953855 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C916A5115472D3B00953855 /* InfoPlist.strings */; };
+		4C916A5515472D3B00953855 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C916A5415472D3B00953855 /* main.m */; };
+		4C916A5915472D3B00953855 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4C916A5715472D3B00953855 /* Credits.rtf */; };
+		4C916A5C15472D3B00953855 /* NXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C916A5B15472D3B00953855 /* NXAppDelegate.m */; };
+		4C916A5F15472D3B00953855 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C916A5D15472D3B00953855 /* MainMenu.xib */; };
+		4C916A6715472D3B00953855 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C916A6615472D3B00953855 /* SenTestingKit.framework */; };
+		4C916A6815472D3B00953855 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C916A4815472D3B00953855 /* Cocoa.framework */; };
+		4C916A7015472D3C00953855 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C916A6E15472D3C00953855 /* InfoPlist.strings */; };
+		4C916A7315472D3C00953855 /* CloudSyncStatusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C916A7215472D3C00953855 /* CloudSyncStatusTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C916A6915472D3C00953855 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C916A3B15472D3B00953855 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C916A4315472D3B00953855;
+			remoteInfo = CloudSyncStatus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C916A4415472D3B00953855 /* CloudSyncStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudSyncStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C916A4815472D3B00953855 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4C916A4B15472D3B00953855 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4C916A4C15472D3B00953855 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4C916A4D15472D3B00953855 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C916A5015472D3B00953855 /* CloudSyncStatus-Info.plist */ = {isa = PBXFileReference; path = "CloudSyncStatus-Info.plist"; sourceTree = "<group>"; };
+		4C916A5215472D3B00953855 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C916A5415472D3B00953855 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C916A5615472D3B00953855 /* CloudSyncStatus-Prefix.pch */ = {isa = PBXFileReference; path = "CloudSyncStatus-Prefix.pch"; sourceTree = "<group>"; };
+		4C916A5815472D3B00953855 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4C916A5A15472D3B00953855 /* NXAppDelegate.h */ = {isa = PBXFileReference; path = NXAppDelegate.h; sourceTree = "<group>"; };
+		4C916A5B15472D3B00953855 /* NXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXAppDelegate.m; sourceTree = "<group>"; };
+		4C916A5E15472D3B00953855 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4C916A6515472D3B00953855 /* CloudSyncStatusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudSyncStatusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C916A6615472D3B00953855 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4C916A6D15472D3C00953855 /* CloudSyncStatusTests-Info.plist */ = {isa = PBXFileReference; path = "CloudSyncStatusTests-Info.plist"; sourceTree = "<group>"; };
+		4C916A6F15472D3C00953855 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C916A7115472D3C00953855 /* CloudSyncStatusTests.h */ = {isa = PBXFileReference; path = CloudSyncStatusTests.h; sourceTree = "<group>"; };
+		4C916A7215472D3C00953855 /* CloudSyncStatusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudSyncStatusTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C916A4115472D3B00953855 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C916A4915472D3B00953855 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C916A6115472D3B00953855 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C916A6715472D3B00953855 /* SenTestingKit.framework in Frameworks */,
+				4C916A6815472D3B00953855 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C916A3915472D3B00953855 = {
+			isa = PBXGroup;
+			children = (
+				4C916A4E15472D3B00953855 /* CloudSyncStatus */,
+				4C916A6B15472D3C00953855 /* CloudSyncStatusTests */,
+				4C916A4715472D3B00953855 /* Frameworks */,
+				4C916A4515472D3B00953855 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C916A4515472D3B00953855 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C916A4415472D3B00953855 /* CloudSyncStatus.app */,
+				4C916A6515472D3B00953855 /* CloudSyncStatusTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C916A4715472D3B00953855 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C916A4815472D3B00953855 /* Cocoa.framework */,
+				4C916A6615472D3B00953855 /* SenTestingKit.framework */,
+				4C916A4A15472D3B00953855 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C916A4A15472D3B00953855 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C916A4B15472D3B00953855 /* AppKit.framework */,
+				4C916A4C15472D3B00953855 /* CoreData.framework */,
+				4C916A4D15472D3B00953855 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4C916A4E15472D3B00953855 /* CloudSyncStatus */ = {
+			isa = PBXGroup;
+			children = (
+				4C916A5A15472D3B00953855 /* NXAppDelegate.h */,
+				4C916A5B15472D3B00953855 /* NXAppDelegate.m */,
+				4C916A5D15472D3B00953855 /* MainMenu.xib */,
+				4C916A4F15472D3B00953855 /* Supporting Files */,
+			);
+			path = CloudSyncStatus;
+			sourceTree = "<group>";
+		};
+		4C916A4F15472D3B00953855 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C916A5015472D3B00953855 /* CloudSyncStatus-Info.plist */,
+				4C916A5115472D3B00953855 /* InfoPlist.strings */,
+				4C916A5415472D3B00953855 /* main.m */,
+				4C916A5615472D3B00953855 /* CloudSyncStatus-Prefix.pch */,
+				4C916A5715472D3B00953855 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C916A6B15472D3C00953855 /* CloudSyncStatusTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C916A7115472D3C00953855 /* CloudSyncStatusTests.h */,
+				4C916A7215472D3C00953855 /* CloudSyncStatusTests.m */,
+				4C916A6C15472D3C00953855 /* Supporting Files */,
+			);
+			path = CloudSyncStatusTests;
+			sourceTree = "<group>";
+		};
+		4C916A6C15472D3C00953855 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C916A6D15472D3C00953855 /* CloudSyncStatusTests-Info.plist */,
+				4C916A6E15472D3C00953855 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C916A4315472D3B00953855 /* CloudSyncStatus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C916A7615472D3C00953855 /* Build configuration list for PBXNativeTarget "CloudSyncStatus" */;
+			buildPhases = (
+				4C916A4015472D3B00953855 /* Sources */,
+				4C916A4115472D3B00953855 /* Frameworks */,
+				4C916A4215472D3B00953855 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudSyncStatus;
+			productName = CloudSyncStatus;
+			productReference = 4C916A4415472D3B00953855 /* CloudSyncStatus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C916A6415472D3B00953855 /* CloudSyncStatusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C916A7915472D3C00953855 /* Build configuration list for PBXNativeTarget "CloudSyncStatusTests" */;
+			buildPhases = (
+				4C916A6015472D3B00953855 /* Sources */,
+				4C916A6115472D3B00953855 /* Frameworks */,
+				4C916A6215472D3B00953855 /* Resources */,
+				4C916A6315472D3B00953855 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C916A6A15472D3C00953855 /* PBXTargetDependency */,
+			);
+			name = CloudSyncStatusTests;
+			productName = CloudSyncStatusTests;
+			productReference = 4C916A6515472D3B00953855 /* CloudSyncStatusTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C916A3B15472D3B00953855 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NX;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 4C916A3E15472D3B00953855 /* Build configuration list for PBXProject "CloudSyncStatus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4C916A3915472D3B00953855;
+			productRefGroup = 4C916A4515472D3B00953855 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C916A4315472D3B00953855 /* CloudSyncStatus */,
+				4C916A6415472D3B00953855 /* CloudSyncStatusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C916A4215472D3B00953855 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C916A5315472D3B00953855 /* InfoPlist.strings in Resources */,
+				4C916A5915472D3B00953855 /* Credits.rtf in Resources */,
+				4C916A5F15472D3B00953855 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C916A6215472D3B00953855 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C916A7015472D3C00953855 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C916A6315472D3B00953855 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C916A4015472D3B00953855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C916A5515472D3B00953855 /* main.m in Sources */,
+				4C916A5C15472D3B00953855 /* NXAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C916A6015472D3B00953855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C916A7315472D3C00953855 /* CloudSyncStatusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C916A6A15472D3C00953855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C916A4315472D3B00953855 /* CloudSyncStatus */;
+			targetProxy = 4C916A6915472D3C00953855 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C916A5115472D3B00953855 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C916A5215472D3B00953855 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4C916A5715472D3B00953855 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C916A5815472D3B00953855 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4C916A5D15472D3B00953855 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C916A5E15472D3B00953855 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4C916A6E15472D3C00953855 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C916A6F15472D3C00953855 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C916A7415472D3C00953855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4C916A7515472D3C00953855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4C916A7715472D3C00953855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudSyncStatus/CloudSyncStatus-Prefix.pch";
+				INFOPLIST_FILE = "CloudSyncStatus/CloudSyncStatus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C916A7815472D3C00953855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudSyncStatus/CloudSyncStatus-Prefix.pch";
+				INFOPLIST_FILE = "CloudSyncStatus/CloudSyncStatus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4C916A7A15472D3C00953855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CloudSyncStatus.app/Contents/MacOS/CloudSyncStatus";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudSyncStatus/CloudSyncStatus-Prefix.pch";
+				INFOPLIST_FILE = "CloudSyncStatusTests/CloudSyncStatusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4C916A7B15472D3C00953855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CloudSyncStatus.app/Contents/MacOS/CloudSyncStatus";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudSyncStatus/CloudSyncStatus-Prefix.pch";
+				INFOPLIST_FILE = "CloudSyncStatusTests/CloudSyncStatusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C916A3E15472D3B00953855 /* Build configuration list for PBXProject "CloudSyncStatus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C916A7415472D3C00953855 /* Debug */,
+				4C916A7515472D3C00953855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C916A7615472D3C00953855 /* Build configuration list for PBXNativeTarget "CloudSyncStatus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C916A7715472D3C00953855 /* Debug */,
+				4C916A7815472D3C00953855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4C916A7915472D3C00953855 /* Build configuration list for PBXNativeTarget "CloudSyncStatusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C916A7A15472D3C00953855 /* Debug */,
+				4C916A7B15472D3C00953855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C916A3B15472D3B00953855 /* Project object */;
+}
