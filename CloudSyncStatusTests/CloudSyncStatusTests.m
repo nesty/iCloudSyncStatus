@@ -3,7 +3,7 @@
 //  CloudSyncStatusTests
 //
 //  Created by Michael Gunder on 4/24/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 dot. All rights reserved.
 //
 
 #import "CloudSyncStatusTests.h"

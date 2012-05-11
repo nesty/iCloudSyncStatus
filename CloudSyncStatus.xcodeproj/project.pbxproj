@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C8DC6221547F99200AEB690 /* menubar-icon-unkown.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8DC6211547F99200AEB690 /* menubar-icon-unkown.png */; };
 		4C916A4915472D3B00953855 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C916A4815472D3B00953855 /* Cocoa.framework */; };
 		4C916A5315472D3B00953855 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C916A5115472D3B00953855 /* InfoPlist.strings */; };
 		4C916A5515472D3B00953855 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C916A5415472D3B00953855 /* main.m */; };
@@ -17,6 +18,8 @@
 		4C916A6815472D3B00953855 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C916A4815472D3B00953855 /* Cocoa.framework */; };
 		4C916A7015472D3C00953855 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C916A6E15472D3C00953855 /* InfoPlist.strings */; };
 		4C916A7315472D3C00953855 /* CloudSyncStatusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C916A7215472D3C00953855 /* CloudSyncStatusTests.m */; };
+		4C916A7E154730B600953855 /* menubar-icon-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C916A7C154730B600953855 /* menubar-icon-active.png */; };
+		4C916A7F154730B600953855 /* menubar-icon-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C916A7D154730B600953855 /* menubar-icon-inactive.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,25 +33,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C8DC6211547F99200AEB690 /* menubar-icon-unkown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menubar-icon-unkown.png"; path = "Resources/menubar-icon-unkown.png"; sourceTree = "<group>"; };
 		4C916A4415472D3B00953855 /* CloudSyncStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudSyncStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C916A4815472D3B00953855 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4C916A4B15472D3B00953855 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4C916A4C15472D3B00953855 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4C916A4D15472D3B00953855 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4C916A5015472D3B00953855 /* CloudSyncStatus-Info.plist */ = {isa = PBXFileReference; path = "CloudSyncStatus-Info.plist"; sourceTree = "<group>"; };
+		4C916A5015472D3B00953855 /* CloudSyncStatus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudSyncStatus-Info.plist"; sourceTree = "<group>"; };
 		4C916A5215472D3B00953855 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C916A5415472D3B00953855 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4C916A5615472D3B00953855 /* CloudSyncStatus-Prefix.pch */ = {isa = PBXFileReference; path = "CloudSyncStatus-Prefix.pch"; sourceTree = "<group>"; };
+		4C916A5615472D3B00953855 /* CloudSyncStatus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudSyncStatus-Prefix.pch"; sourceTree = "<group>"; };
 		4C916A5815472D3B00953855 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		4C916A5A15472D3B00953855 /* NXAppDelegate.h */ = {isa = PBXFileReference; path = NXAppDelegate.h; sourceTree = "<group>"; };
+		4C916A5A15472D3B00953855 /* NXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXAppDelegate.h; sourceTree = "<group>"; };
 		4C916A5B15472D3B00953855 /* NXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXAppDelegate.m; sourceTree = "<group>"; };
 		4C916A5E15472D3B00953855 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4C916A6515472D3B00953855 /* CloudSyncStatusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudSyncStatusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C916A6615472D3B00953855 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		4C916A6D15472D3C00953855 /* CloudSyncStatusTests-Info.plist */ = {isa = PBXFileReference; path = "CloudSyncStatusTests-Info.plist"; sourceTree = "<group>"; };
+		4C916A6D15472D3C00953855 /* CloudSyncStatusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudSyncStatusTests-Info.plist"; sourceTree = "<group>"; };
 		4C916A6F15472D3C00953855 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C916A7115472D3C00953855 /* CloudSyncStatusTests.h */ = {isa = PBXFileReference; path = CloudSyncStatusTests.h; sourceTree = "<group>"; };
+		4C916A7115472D3C00953855 /* CloudSyncStatusTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudSyncStatusTests.h; sourceTree = "<group>"; };
 		4C916A7215472D3C00953855 /* CloudSyncStatusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudSyncStatusTests.m; sourceTree = "<group>"; };
+		4C916A7C154730B600953855 /* menubar-icon-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menubar-icon-active.png"; path = "Resources/menubar-icon-active.png"; sourceTree = "<group>"; };
+		4C916A7D154730B600953855 /* menubar-icon-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menubar-icon-inactive.png"; path = "Resources/menubar-icon-inactive.png"; sourceTree = "<group>"; };
+		4C916A81154732CC00953855 /* CloudSyncStatus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CloudSyncStatus.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +121,7 @@
 		4C916A4E15472D3B00953855 /* CloudSyncStatus */ = {
 			isa = PBXGroup;
 			children = (
+				4C916A81154732CC00953855 /* CloudSyncStatus.entitlements */,
 				4C916A5A15472D3B00953855 /* NXAppDelegate.h */,
 				4C916A5B15472D3B00953855 /* NXAppDelegate.m */,
 				4C916A5D15472D3B00953855 /* MainMenu.xib */,
@@ -125,6 +133,7 @@
 		4C916A4F15472D3B00953855 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C916A80154730BC00953855 /* Menu Bar Icons */,
 				4C916A5015472D3B00953855 /* CloudSyncStatus-Info.plist */,
 				4C916A5115472D3B00953855 /* InfoPlist.strings */,
 				4C916A5415472D3B00953855 /* main.m */,
@@ -151,6 +160,16 @@
 				4C916A6E15472D3C00953855 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C916A80154730BC00953855 /* Menu Bar Icons */ = {
+			isa = PBXGroup;
+			children = (
+				4C8DC6211547F99200AEB690 /* menubar-icon-unkown.png */,
+				4C916A7C154730B600953855 /* menubar-icon-active.png */,
+				4C916A7D154730B600953855 /* menubar-icon-inactive.png */,
+			);
+			name = "Menu Bar Icons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +219,7 @@
 			attributes = {
 				CLASSPREFIX = NX;
 				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = dot;
 			};
 			buildConfigurationList = 4C916A3E15472D3B00953855 /* Build configuration list for PBXProject "CloudSyncStatus" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -227,6 +247,9 @@
 				4C916A5315472D3B00953855 /* InfoPlist.strings in Resources */,
 				4C916A5915472D3B00953855 /* Credits.rtf in Resources */,
 				4C916A5F15472D3B00953855 /* MainMenu.xib in Resources */,
+				4C916A7E154730B600953855 /* menubar-icon-active.png in Resources */,
+				4C916A7F154730B600953855 /* menubar-icon-inactive.png in Resources */,
+				4C8DC6221547F99200AEB690 /* menubar-icon-unkown.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +348,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -352,7 +375,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -370,6 +393,8 @@
 		4C916A7715472D3C00953855 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CloudSyncStatus/CloudSyncStatus.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudSyncStatus/CloudSyncStatus-Prefix.pch";
 				INFOPLIST_FILE = "CloudSyncStatus/CloudSyncStatus-Info.plist";
@@ -381,6 +406,8 @@
 		4C916A7815472D3C00953855 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CloudSyncStatus/CloudSyncStatus.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudSyncStatus/CloudSyncStatus-Prefix.pch";
 				INFOPLIST_FILE = "CloudSyncStatus/CloudSyncStatus-Info.plist";
@@ -436,6 +463,7 @@
 				4C916A7815472D3C00953855 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C916A7915472D3C00953855 /* Build configuration list for PBXNativeTarget "CloudSyncStatusTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +472,7 @@
 				4C916A7B15472D3C00953855 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
