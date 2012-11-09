@@ -31,13 +31,13 @@ typedef CloudSyncStatus;
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    [self displayMenuBarIcon:CloudSyncStatusUnkown];
+    [self setMenuBarIcon:CloudSyncStatusUnkown];
     
     [self ubiquitousContainerURL];
     [self ubiquitousStorageDocumentSearch];
 }
 
-- (void)displayMenuBarIcon:(CloudSyncStatus)status {
+- (void)setMenuBarIcon:(CloudSyncStatus)status andStatusMenuItemText:(NSString *)aString {
     if (!_statusMenuBarItem) {
         NSZone *menuZone = [NSMenu menuZone];
         NSMenu *menu = [[NSMenu allocWithZone:menuZone] init];
@@ -64,20 +64,32 @@ typedef CloudSyncStatus;
     switch (status) {
         case CloudSyncStatusSyncing:
             menuBarIconFileName = @"menubar-icon-active.png";
-            [[_statusMenuBarItem.menu itemAtIndex:0] setTitle:@"Syncing..."];
+            [self setStatusMenuItemText:@"Syncing..."];
             break;
         case CloudSyncStatusInactive:
             menuBarIconFileName = @"menubar-icon-inactive.png";
-            [[_statusMenuBarItem.menu itemAtIndex:0] setTitle:@"Synced"];
+            [self setStatusMenuItemText:@"Synced"];
             break;
         case CloudSyncStatusUnkown:
         default:
             menuBarIconFileName = @"menubar-icon-unkown.png";
-            [[_statusMenuBarItem.menu itemAtIndex:0] setTitle:@"Initializing..."];
+            [self setStatusMenuItemText:@"Initializing..."];
             break;
     }
     
+    if (aString) {
+        [self setStatusMenuItemText:aString];
+    }
+    
     _statusMenuBarItem.image = [NSImage imageNamed:menuBarIconFileName];
+}
+
+- (void)setMenuBarIcon:(CloudSyncStatus)status {
+    [self setMenuBarIcon:status andStatusMenuItemText:nil];
+}
+
+- (void)setStatusMenuItemText:(NSString *)aString {
+    [[_statusMenuBarItem.menu itemAtIndex:0] setTitle:aString];
 }
 
 - (NSURL *)ubiquitousContainerURL {
@@ -87,6 +99,7 @@ typedef CloudSyncStatus;
     return ubiquitousContainerURL;
 }
 
+/*
 - (void)ubiquitousContainerSyncStatusCheck:(NSNotification *)notification {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSURL *ubiquitousContainerURL = [fileManager URLForUbiquityContainerIdentifier:nil];
@@ -123,6 +136,7 @@ typedef CloudSyncStatus;
         NSLog(@"folder is synced");
     }
 }
+*/
 
 - (void)ubiquitousStorageDocumentSearch {
     self.documentStatusQuery = [[NSMetadataQuery alloc] init];
@@ -141,28 +155,47 @@ typedef CloudSyncStatus;
 - (void)ubiquitousDocumentStatusChanged:(NSNotification *)notification {
     [self.documentStatusQuery disableUpdates];
     
-    [self displayMenuBarIcon:CloudSyncStatusUnkown];
+    [self setMenuBarIcon:CloudSyncStatusUnkown];
     
-    int resultCount = self.documentStatusQuery.resultCount;
+    int resultCount = (int)self.documentStatusQuery.resultCount;
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     
         for (int i = 0; i < resultCount; i++) {
             NSMetadataItem *item = [self.documentStatusQuery resultAtIndex:i];
+            NSString *fileName = [item valueForAttribute:NSMetadataItemDisplayNameKey];
             
             BOOL documentUploaded = [[item valueForAttribute:NSMetadataUbiquitousItemIsUploadedKey] boolValue];
             BOOL documentDownloaded = [[item valueForAttribute:NSMetadataUbiquitousItemIsDownloadedKey] boolValue];
             
+            BOOL isUploadingDocument = [[item valueForAttribute:NSMetadataUbiquitousItemIsUploadingKey] boolValue];
+            BOOL isDownloadingDocument = [[item valueForAttribute:NSMetadataUbiquitousItemIsDownloadingKey] boolValue];
+            
             if (!documentUploaded || !documentDownloaded) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    [self displayMenuBarIcon:CloudSyncStatusSyncing];
+                    if (isUploadingDocument) {
+                        NSUInteger percentUploaded = [[item valueForAttribute:NSMetadataUbiquitousItemPercentUploadedKey] integerValue];
+                        NSString *statusString = [NSString stringWithFormat:@"Uploading: %@ (%li %%)...", fileName, percentUploaded];
+                        [self setMenuBarIcon:CloudSyncStatusSyncing andStatusMenuItemText:statusString];
+                    }
+                    
+                    else if (isDownloadingDocument) {
+                        NSUInteger percentDownloaded = [[item valueForAttribute:NSMetadataUbiquitousItemPercentDownloadedKey] integerValue];
+                        NSString *statusString = [NSString stringWithFormat:@"Downlading: %@ (%li %%)...", fileName, percentDownloaded];
+                        [self setMenuBarIcon:CloudSyncStatusSyncing andStatusMenuItemText:statusString];
+                    }
+                    
+                    else {
+                        NSString *statusString = [@"Syncing: " stringByAppendingString:fileName];
+                        [self setMenuBarIcon:CloudSyncStatusSyncing andStatusMenuItemText:statusString];
+                    }
                 });
                 
                 break;
             }
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                [self displayMenuBarIcon:CloudSyncStatusInactive];
+                [self setMenuBarIcon:CloudSyncStatusInactive];
             });
         }
     });
